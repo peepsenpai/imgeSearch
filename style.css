@@ -3,11 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+   background-color: var(--btn-letter); 
+}
+#userInput{
+    padding: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 4px 11px 1px #4b4343;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 .images-grid{
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    gap: 6px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.PerImg{
+    padding-bottom: 20px;
+}
+.likes{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.likes i{
+    color: var(--body-leter-bg);
+}
+.likes{
+    color:var(--body-letter);
+}
+.btn{
+    background-color: var(--body-leter-bg);
+    color: var(--btn-letter);
+    font-weight: var(--font-weight-mode);
+}
+.search-button{
+    margin: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.theme-change-icon{
+    font-size: 29px;
+    cursor: pointer;
+}
+.theme-change-icon i{
+    color: var(--body-leter-bg);
+}
+.day-night{
+    color: var(--body-leter-bg);
 }
 
 @media (max-width: 1000px){
@@ -20,6 +66,28 @@
         grid-template-columns: auto;
     }
     .PerImg img{
-        padding: 10px;
+        padding: 6px;
     }
+}
+
+
+:root{
+    --blue: #1f6fe7;
+    --yellow: rgb(255, 255, 5);
+    --black: rgb(49, 45, 45);
+    --white: white;
+    --font-weight: bold;
+}
+.light{
+    --body-leter-bg: var(--blue);
+    --body-yellow: var(--yellow);
+    --body-letter:var(--black);
+    --btn-letter:var(--white);
+    --font-weight-mode: normal; 
+}
+.dark{
+    --body-leter-bg: var(--yellow);
+    --btn-letter: var(--black);
+    --body-letter:var(--white);
+    --font-weight-mode:var(--font-weight);
 }
